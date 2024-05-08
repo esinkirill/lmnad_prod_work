@@ -11,4 +11,4 @@ docker exec lmnad_mysql sh -c 'mkdir -p /root/backup && rm -f /root/backup/* && 
 
 docker cp lmnad_mysql:/root/backup/backup_$now.sql.gz /tmp/
 
-docker cp /tmp/backup_$now.sql.gz lmnad_web:/root/backupcd
+docker cp /tmp/backup_$now.sql.gz lmnad_web:/root/backup
